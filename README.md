@@ -1,2 +1,7 @@
 # fuzzing-tutorial
-Basic fuzzing tutorial showing how AFL finds potential vulnerabilities in poorly constructed C++ programs.
+
+// Copyright 2020
+// Charles Lucas
+// ZeroSquared.io
+
+Basic fuzzing tutorial showing how you can use AFL to find potential vulnerabilities in poorly constructed C++ programs.
