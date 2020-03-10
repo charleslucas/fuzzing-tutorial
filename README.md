@@ -15,10 +15,9 @@ My environment setup:
 
 Notes:
   First time I ran, AFL gave me an unclear message about /proc/sys/kernel/core_pattern.
-  Log in as root (don't use sudo), and then run the command exactly as given.
+  To take care of it su as root (don't use sudo), and then run the command exactly as given.
 
-  AFL needs a file with *something* in it inside the -i input directory.  Just create one file with a word in it.
-
+The initial testcase for exploitable2 consists of a textfile with a few names in it:  testcases/users.txt
 
 Compile:  afl-g++ exploitable2.cpp -g -o exploitable2
-Execute:  afl-fuzz -i afl_in -o afl_out ./exploitable2
+Execute:  afl-fuzz -i testcases -o afl_out ./exploitable2 @@
